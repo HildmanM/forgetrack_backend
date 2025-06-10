@@ -1,3 +1,13 @@
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Layout from './components/Layout';
+import Dashboard from './components/Dashboard';
+import JobsModule from './components/jobs/JobsModule';
+import InventoryModule from './components/inventory/InventoryModule';
+import ClientsModule from './components/clients/ClientsModule';
+import LaborModule from './components/labor/LaborModule';
+import ReportsModule from './components/reports/ReportsModule';
+
 export function App() {
   return (
     <BrowserRouter>
@@ -14,3 +24,6 @@ export function App() {
     </BrowserRouter>
   );
 }
+
+export default App;
+
